@@ -6,7 +6,6 @@ RightEarX =0;
 RightEarY =0;
 function preload(){
    clown_nose = loadImage('https://i.postimg.cc/x1ry4CKM/Clown-Nose-PNG-Pic.png');
-   earing_img = loadImage('https://i.postimg.cc/P5nhrgGY/toppng-com-earring-472x879.png');
 }
 function setup(){
     canvas = createCanvas(300, 300);
@@ -20,8 +19,6 @@ function setup(){
 function draw(){
     image(video, 0, 0, 300,300);
     image(clown_nose, noseX, noseY, 30,30);
-    image(earing_img, LeftEarX, LeftEarY, 10,50);
-    image(earing_img, RightEarX, RightEarY, 10,50);
 }
 function takeSnapshot(){
     save('my_filter_image.png');
